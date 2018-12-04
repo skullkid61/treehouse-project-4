@@ -1,11 +1,13 @@
-//-----------------------------//
-//----Base styles--------------//
 // ======================================
 //  Base Styles
 // ======================================
 
-// Can only use '*', 'ul', 'p' ===========
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  font-family: $mainfont;
+}
 
-* {
-    box-sizing: border-box;
-  }
+.card {
+  line-height: 2em;
+}

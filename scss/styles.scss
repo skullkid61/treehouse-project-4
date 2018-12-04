@@ -5,24 +5,8 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-// Utilities
-@import 'utilities/mixins',
-        'utilities/variables',
-        'utilities/functions',
-        'utilities/extends',
-        'utilities/index',
-        'utilities/placeholders';
-        
-// Base Styles     
-@import 'base/reset',
-        'base/base',
-        'base/index';
+@import 'utilities/index',
+        'base/index',
+        'components/index';  
 
-// Component Styles
-@import 'components/navigation',
-        'components/buttons',
-        'components/forms',
-        'components/images',
-        'components/index',
-        'components/grid',
-        'components/typography';
+
