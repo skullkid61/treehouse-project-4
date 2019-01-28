@@ -1,0 +1,7 @@
+// ======================================
+//  Funcitons
+// ======================================
+
+@function px-to-pc($target, $context: $max-width) {
+  @return ($target / $context) * 100%;
+}

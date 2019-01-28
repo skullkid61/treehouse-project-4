@@ -3,11 +3,9 @@
 // ======================================
 
 .container {
-  max-width: 80%;
+  width: 90%;
   margin: 0 auto;
   font-family: $mainfont;
-}
-
-.card {
-  line-height: 2em;
+  color: $text;
+  max-width: $max-width;
 }

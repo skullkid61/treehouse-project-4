@@ -1,0 +1,8 @@
+//====================
+// Mixins
+//====================
+
+@mixin flexy($col-row) {
+  display: flex;
+  flex-direction: $col-row;
+ }

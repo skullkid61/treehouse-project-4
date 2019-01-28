@@ -9,3 +9,29 @@ $mainfont: 'Open Sans', Helvetica, Arial, sans-serif;
 $color-primary: #58e1c1;
 $background: #ffffff;
 $text: #5a5a5a;
+$text-light: lighten($text, 10%);
+$text-fade: rgba($text, 0.8);
+
+$default: #51ddfc;
+$success: #63cc82;
+$error: #e4757a;
+$warning: #fd7856;
+$info: #927bc1;
+
+$grid12: #80e8d1;
+$grid6: #3fabca;
+$grid4: #7ee6fd;
+$grid3: #deb2ee;
+$grid5: #88d9a0;
+$grid7: #ec9fa3;
+$grid8: #fd9f85;
+
+// Breakpoints
+$break-xs: 575px;
+$break-s: 576px;
+$break-m: 768px;
+$break-l: 992px;
+
+// Layout
+$max-width: 1120px;
+$gutter: 10px;

@@ -2,12 +2,74 @@
 // Grid
 //====================
 
-.grid_row {
-  display: flex;
-  flex-direction: column;
+.grid__row {
+  @include flexy(column);
+  justify-content: space-around;
+  margin: 1em 1em 2em 1em;
+  padding: .8em 0;
+  @media (min-width: $break-m) {
+    @include flexy(row);
+    align-items: center;
+  }
+  max-width: $max-width;
 }
 
-.grid_col--3 {
-  justify-content: center;
-  display: flex;
+.grid__col--2 {
+  
+}
+
+.grid__col--3 {
+
+}
+
+.grid__col--4 {
+  flex: 1;
+}
+
+.grid__col--5 {
+  flex: 2;
+}
+
+.grid__col--6 {
+  
+}
+
+.grid__col--7 {
+  flex: 3;
+}
+
+.grid__col--8 {
+  flex: 2;
+}
+
+.grid__col--9 {
+
+}
+
+.grid__col--10 {
+
+}
+
+.grid__col--11 {
+
+}
+
+.grid__col--12 {
+  @include flexy(column);
+  @media (min-width: $break-m) {
+    @include flexy(row);
+    flex: 1 100%;
+    justify-content: space-around;
+  }
+}
+
+.centered {
+  @media (min-width: $break-m) {
+    text-align: center;
+  }
+}
+
+.theme__colors {
+  border-radius: 5px;
+  font-weight: bold;
 }
