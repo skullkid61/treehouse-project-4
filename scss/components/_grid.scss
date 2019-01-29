@@ -3,73 +3,88 @@
 //====================
 
 .grid__row {
-  @include flexy(column);
-  justify-content: space-around;
-  margin: 1em 1em 2em 1em;
-  padding: .8em 0;
-  @media (min-width: $break-m) {
+  @include flexy(column, space-between);
+  padding: .6em 0;
+  margin: .8em 0;
+  @include mq(medium) {
     @include flexy(row);
     align-items: center;
   }
   max-width: $max-width;
 }
 
-.grid__col--2 {
-  
-}
-
 .grid__col--3 {
-
+  flex: 2;
+  &.theme__colors {
+    background-color: $grid3;
+  }
 }
 
 .grid__col--4 {
   flex: 1;
+  &.theme__colors {
+    background-color: $grid4;
+  }
 }
 
 .grid__col--5 {
   flex: 2;
+  &.theme__colors {
+    background-color: $grid5;
+  }
 }
 
 .grid__col--6 {
-  
+  flex: 1;
+  &.theme__colors {
+    background-color: $grid6;
+  }
 }
 
 .grid__col--7 {
   flex: 3;
+  &.theme__colors {
+    background-color: $grid7;
+  }
 }
 
 .grid__col--8 {
   flex: 2;
+  &.theme__colors {
+    background-color: $grid8;
+  }
 }
 
 .grid__col--9 {
-
-}
-
-.grid__col--10 {
-
-}
-
-.grid__col--11 {
-
+  flex: 3;
 }
 
 .grid__col--12 {
   @include flexy(column);
-  @media (min-width: $break-m) {
+  @include mq(medium) {
     @include flexy(row);
     flex: 1 100%;
     justify-content: space-around;
   }
+  &.theme__colors {
+    background-color: $grid12;
+  }
 }
 
 .centered {
-  @media (min-width: $break-m) {
-    text-align: center;
+  @include mq(medium) {
+    margin: 0 20% !important;
   }
 }
 
 .theme__colors {
   border-radius: 5px;
   font-weight: bold;
+  padding: .9em;
+  margin: 4px 5px;
+  font-size: 14px;
+  @include mq(medium) {
+    padding: .8em 3.4em;
+    text-align: center;
+  }
 }

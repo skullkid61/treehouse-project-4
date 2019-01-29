@@ -4,7 +4,10 @@
 
 .card {
   line-height: 1.8em;
-  padding: .8em;
+  padding: 1em 1.2em;
+  @include mq(medium) {
+    padding-right: 2em;
+  }
 }
 
 .headline--primary {
@@ -21,7 +24,7 @@
 }
 
 .link {
-  text-decoration: none;
+  @extend %link;
   color: $default;
   font-weight: 600;
 }
@@ -34,6 +37,6 @@
   border-radius: 5px;
   padding-left: 0.9em;
   margin-left: 20px;
-  margin-right: 4px;
+  margin-right: 1.2em;
   margin-bottom: .5em;
 }

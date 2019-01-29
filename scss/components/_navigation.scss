@@ -4,9 +4,9 @@
 
 .nav {
   @include flexy(column);
-  margin-bottom: 1em;
+  margin: 1em auto;
   &__item {
-    text-align: center;
+    @extend %nav;
     a {
       color: $text;
       text-decoration: none;
@@ -19,8 +19,9 @@
       }
     }
   }
-  @media (min-width: $break-m) {
+  @include mq(medium) {
     @include flexy(row);
     align-items: center;
+    margin-left: 2em;
   }
 }

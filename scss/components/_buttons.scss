@@ -2,14 +2,6 @@
 // Buttons
 // ================
 
-%btn-- {
-    border: none;
-      color: $background;
-      text-transform: uppercase;
-      margin: .8em 0;
-      padding: .8em 3.4em;
-  }
-
 .btn-- {
     &default {
         @extend %btn--;
